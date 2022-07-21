@@ -394,24 +394,6 @@ img {
   margin: 0 auto;
 }
 
-.icon-arrow-down,
-.icon-arrow-up {
-  fill: #fff;
-}
-
-.icon-arrow-down.hide {
-  display: none;
-}
-
-.icon-arrow-up {
-  display: none;
-}
-
-.icon-arrow-up.show {
-  display: block;
-  fill: #2c2c2c;
-}
-
 .icon-planet {
   margin-right: 10px;
 }
@@ -448,6 +430,16 @@ img {
 
 .brokers-body__platforms-body {
   display: none;
+}
+
+.brokers-footer__payment-system {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
 }
 
 @media (max-width: 1198px) {
@@ -653,12 +645,6 @@ img {
 }
 
 @media (max-width: 767.98px) {
-  .brokers-body_hide {
-    height: 0;
-  }
-  .brokers-body.open {
-    height: 100%;
-  }
   .button__show-info.body-open:hover,
   .button__show-info.body-open:focus,
   .button__show-info.body-open {
@@ -749,6 +735,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .broker-items__header {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -787,8 +776,11 @@ img {
   .brokers-footer__button-primary {
     margin-bottom: 10px !important;
   }
+}
+
+@media (max-width: 320px) {
   .allpips-logo {
-    width: 55px;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
