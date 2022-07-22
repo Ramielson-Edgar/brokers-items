@@ -224,6 +224,10 @@ img {
   gap: 5px;
 }
 
+.brokers-body__accessibility-list-fcc {
+  max-height: 250px;
+}
+
 .brokers-body__list-wrapper {
   flex-grow: 1;
 }
@@ -342,15 +346,16 @@ img {
 }
 
 .brokers-body__item-fcc::before {
-  top: 13px;
+  top: 9px;
   left: 15px;
 }
+
 .brokers-body__item-fcc:nth-child(3)::before {
   background-image: url('../../img/icon-not-avalibale.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
 }
 
 .icon-level {
@@ -373,6 +378,7 @@ img {
   font-size: 11px;
   line-height: 1.1;
   color: #f05d5d;
+  text-align: left;
 }
 
 .brokers-footer__warning-message {
@@ -451,12 +457,14 @@ img {
 
   .brokers-body__accessibility-list {
     @include flex-grid(278px, 30px);
+    padding: 30px 20px;
   }
 
   .brokers-body__stats {
     flex-direction: row;
     justify-content: space-between;
     flex-basis: 0;
+    border-bottom: 1px solid #f5f5f5;
   }
   .brokers-body__stats-item {
     flex-direction: column;
@@ -606,6 +614,7 @@ img {
   .brokers-body__stats-item {
     flex-direction: unset;
     justify-content: space-between;
+    align-items: center;
   }
 
   .brokers-body__platforms-body {
@@ -631,13 +640,13 @@ img {
     justify-content: center;
     width: 100%;
   }
+
+  .brokers-footer__message {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .brokers-body__stats {
-    padding: 10px;
-  }
-
   .brokers-footer {
     padding: 20px;
   }
@@ -660,6 +669,14 @@ img {
 
   .brokers-footer__button-primary {
     margin-bottom: 10px !important;
+  }
+
+  .brokers-body__stats-item {
+    margin-bottom: 0 !important;
+  }
+
+  .brokers-body__stats-header {
+    font-size: 12px;
   }
 }
 
